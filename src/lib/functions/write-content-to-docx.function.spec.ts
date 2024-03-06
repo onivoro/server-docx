@@ -3,7 +3,7 @@ import { getFilePaths } from "./get-file-paths.function";
 import { extractContentFromDocx } from "./extract-content-from-docx.function";
 import { execPromise } from '@onivoro/server-process';
 
-const token = '{{DATE}}';
+const token = 'Test Document';
 const replacement = '{{blah}}';
 
 describe('writeContentToDocx', () => {

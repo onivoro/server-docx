@@ -2,12 +2,12 @@ import { execPromise } from '@onivoro/server-process';
 import { docx } from './docx.function';
 
 const docxFilePath = 'test/test.docx';
-const token = 'TEST CONTENT';
+const token = 'Test Document';
 const replacement = 'UPDATED CONTENT';
 
 describe('docx', () => {
     it('extracts xml from docx file', async () => {
-        let result: string;
+        let result: string = '';
         await docx(docxFilePath, async ({ xml }) => {
             result = xml;
         });

@@ -1,23 +1,25 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`getFilePaths creates a set of unique but conventional strings for inflating/deflating docx files on disk with a prefix 1`] = `
-{
-  "contentPath": "some-dir/asdf/inflated/word/document.xml",
-  "inflated": "some-dir/asdf/inflated",
-  "inputFilePath": "some-dir/asdf/asdf.docx",
-  "outputFileName": "some-dir/asdf-modified.docx",
-  "outputFilePath": "some-dir/asdf/asdf-modified.docx",
-  "root": "some-dir/asdf",
-}
-`;
+// Bun Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getFilePaths creates a set of unique but conventional strings for inflating/deflating docx files on disk without a prefix 1`] = `
 {
   "contentPath": "asdf/inflated/word/document.xml",
   "inflated": "asdf/inflated",
   "inputFilePath": "asdf/asdf.docx",
+  "originalname": "asdf.docx",
   "outputFileName": "asdf-modified.docx",
-  "outputFilePath": "asdf/asdf-modified.docx",
+  "outputFilePath": "asdf/inflated/asdf-modified.docx",
   "root": "asdf",
+}
+`;
+
+exports[`getFilePaths creates a set of unique but conventional strings for inflating/deflating docx files on disk with a prefix 1`] = `
+{
+  "contentPath": "some-dir/asdf/inflated/word/document.xml",
+  "inflated": "some-dir/asdf/inflated",
+  "inputFilePath": "some-dir/asdf/asdf.docx",
+  "originalname": "asdf.docx",
+  "outputFileName": "asdf-modified.docx",
+  "outputFilePath": "some-dir/asdf/inflated/asdf-modified.docx",
+  "root": "some-dir/asdf",
 }
 `;
