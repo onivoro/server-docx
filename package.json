@@ -32,15 +32,15 @@
     "devDependencies": {
         "@onivoro/cli": "*",
         "@types/jest": "*",
-        "@types/node": "18.19.1",
+        "@types/node": "22.8.1",
         "typescript": "*"
     },
     "engines": {
-        "node": "18.19.1",
-        "npm": "10.2.4"
+        "node": "22.10.0",
+        "npm": "10.9.0"
     },
     "dependencies": {
-        "@onivoro/server-disk": "^0.3.5",
-        "@onivoro/server-process": "^1.24.2"
+        "@onivoro/server-disk": "^22.0.2",
+        "@onivoro/server-process": "^22.0.1"
     }
 }
